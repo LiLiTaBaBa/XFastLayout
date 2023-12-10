@@ -36,7 +36,7 @@ dependencies {
     //ToastCompat
     api 'me.drakeet.support:toastcompat:1.1.0'
     //新增 RecycleView分割线
-    api 'com.yanyusong.y_divideritemdecoration:y_divideritemdecoration:2.0'
+    //api 'com.yanyusong.y_divideritemdecoration:y_divideritemdecoration:2.0'
 
     //弹性盒子布局Google FlexBoxLayout
     //api 'com.google.android:flexbox:1.0.0'
