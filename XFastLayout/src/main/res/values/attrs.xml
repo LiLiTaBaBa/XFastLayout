@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 流式布局增强版本-->
+    <declare-styleable name="FlowLayouts">
+        <attr name="lineSpacing" format="dimension" />
+    </declare-styleable>
+    <!--  带有删除的EditText-->
+    <declare-styleable name="EditTextWithDelete">
+        <attr name="clearDrawable" format="reference" />
+    </declare-styleable>
+    <!--  上下轮播的切换View-->
+    <declare-styleable name="UpDownViewSwitcher">
+        <attr name="up_to_down" format="boolean" />
+        <attr name="animator_duration" format="integer" />
+        <attr name="switch_duration" format="integer" />
+        <attr name="animator_translate_distance" format="dimension" />
+    </declare-styleable>
+    <!-- 增强的TextView -->
+    <declare-styleable name="TextView2" >
+        <attr name="drawableTopWidth" format="dimension|reference" />
+        <attr  name="drawableTopHeight" format="dimension|reference"  />
+        <attr name="drawableLeftWidth" format="dimension|reference"  />
+        <attr name="drawableLeftHeight" format="dimension|reference" />
+        <attr name="drawableRightWidth" format="dimension|reference" />
+        <attr name="drawableRightHeight" format="dimension|reference" />
+        <attr name="drawableBottomWidth" format="dimension|reference"  />
+        <attr name="drawableBottomHeight" format="dimension|reference" />
+    </declare-styleable>
+    <!-- 带有分割线的GridLayout -->
+    <declare-styleable name="GridLayout2" >
+        <attr  name="dividerColor" format="color|reference"/>
+        <attr name="dividerWidth" format="dimension|reference"/>
+    </declare-styleable>
+    <declare-styleable name="RoundMaskView" >
+        <attr  name="roundColor" format="color|reference"/>
+        <attr name="radius" format="dimension|reference"/>
+        <attr name="topLeftRadius" format="dimension|reference"/>
+        <attr name="topRightRadius" format="dimension|reference"/>
+        <attr name="bottomLeftRadius" format="dimension|reference"/>
+        <attr name="bottomRightRadius" format="dimension|reference"/>
+    </declare-styleable>
+
+</resources>

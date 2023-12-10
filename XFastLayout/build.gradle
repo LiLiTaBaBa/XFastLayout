@@ -1,0 +1,59 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'  //添加这两行
+group='com.github.LiLiTaBaBa'  // GitHub昵称
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    //依赖第三方比较优秀的控件并且是日常开发中比较常用的控件
+    //支持四方方向圆角的ImageView
+    api 'com.makeramen:roundedimageview:2.3.0'
+    //圆形ImageView
+    api 'de.hdodenhof:circleimageview:2.2.0'
+    //ToastCompat
+    api 'me.drakeet.support:toastcompat:1.1.0'
+    //新增 RecycleView分割线
+    api 'com.yanyusong.y_divideritemdecoration:y_divideritemdecoration:2.0'
+
+    //弹性盒子布局Google FlexBoxLayout
+    //api 'com.google.android:flexbox:1.0.0'
+
+    //流式布局
+    //api 'com.hyman:flowlayout-lib:1.1.2'
+
+    //MagicIndicator 魔法指示器  框架的结构很棒 扩展性比较强  高可自定义
+    //api 'com.github.hackware1993:MagicIndicator:1.5.0'
+
+    //BaseQuickAdapter
+    //api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.18'
+
+    //SmartRefreshLayout
+    //api 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-28'
+    //api 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-28'//没有使用特殊Header，可以不加这行
+
+    //图片选择的开发库
+    //api 'com.github.LuckSiege.PictureSelector:picture_library:v2.2.3'
+}
