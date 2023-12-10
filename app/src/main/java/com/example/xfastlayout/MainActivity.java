@@ -1,9 +1,8 @@
-package com.example.xbasedialog;
+package com.example.xfastlayout;
 
 import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import com.example.xfastlayout.R;
 
 public class MainActivity extends AppCompatActivity {
     @Override
